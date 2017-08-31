@@ -1,0 +1,37 @@
+          "HTTP/1.0 200 OK\r\n"
+          "Content-Type: text/html\r\n"
+          "\r\n"
+          "<html>"
+            "<body>"
+            "<div id='menuContainer'>"
+              "<ul id = 'mainNav'"
+                "<li>"
+                  "<a class='mainNavSelected' href='/a.txt'>HOME</a>"
+                "</li>"
+                "<li>"
+                  "<a class='beginners' href='/'>Beginners</a>"
+                "</li>"
+            "</div>"
+              "<h1>door "));
+
+
+                if (PINB & 1)  //현재 문이 열렸는지 닫혔는지 상태 표시
+                  buf.emit_p (PSTR("opened"));
+                else
+                  buf.emit_p (PSTR("closed"));
+  
+              buf.emit_p (PSTR("</h1>"
+
+              "<form method=get>"
+              /*"Connection Type : <input type='radio' name='connection_type' value='0'>DHCP" "<input type='radio' name='connection' value='1'>STATIC<br>"
+              "IP Address      : <input type = 'text' name='ip'><br>"
+              "SubnetMask      : <input type = 'text' name='sm'><br>"
+              "Gateway         : <input type = 'text' name='gw'><br>"
+              "DNS            : <input type = 'text' name='dns'><br>"*/
+              "<input type='radio' name=r value='1'> Lock<br>"
+              "<input type='radio' name=r value='2'> Unlock<br>"
+              "<input type=submit value=submit></form>"
+
+      
+          "</body>"
+        "</html>"
